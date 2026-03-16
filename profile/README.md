@@ -35,8 +35,10 @@
 - [wujie](https://github.com/Show-Demo/wujie) - 微前端框架示例
 - [wujie-demo](https://github.com/Show-Demo/wujie-demo) - Wujie 实践 Demo
 
-## 建议使用方式
+## 如何使用本组织
 
-1. 按实验主题进入对应仓库并阅读 `README` / `docs`。
-2. 优先使用仓库提供的 `docker compose` 或脚本完成一键启动。
-3. 通过压测或请求回放生成数据，再在 UI 中验证链路、日志与告警结果。
+1. 新手入门：先做 `skywalking-v10-java17-demo` 或 `elk-filebeat-java-demo`，这两个仓库环境最完整、反馈最快。
+2. 兼容性实验：需要老版本 Java/组件时，使用 `skywalking-v8-java8-demo`。
+3. 稳定性排障：内存问题用 `memory-troubleshooting-springboot`，优雅下线用 `springboot-graceful-demo`。
+4. 工程化演示：CI/CD 走 `demo-java` / `demo-javascript`，代码质量扫描走 `springboot-vue-*`，制品库走 `nexus-demo` 系列。
+5. 每个仓库都以自身 `README` 为准：先按仓库文档启动，再按文档里的“验证步骤”确认结果。
